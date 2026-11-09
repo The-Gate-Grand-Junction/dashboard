@@ -1,0 +1,33 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+# ─── Headers ─────────────────────────────────────────────────────────────────
+# The dashboard shows billing and inbox data, so it is never framed and loads
+# scripts only from itself. Connections: its own functions, the Auth0 tenant
+# (sign-in and token refresh) and Sentry. Images allow any https host for
+# Auth0 profile pictures (Gravatar, Google). A blocked host shows up as a
+# console error.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Strict-Transport-Security = "max-age=31536000"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://the-gate.us.auth0.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io; frame-src https://the-gate.us.auth0.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

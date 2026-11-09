@@ -1,0 +1,52 @@
+/* Fonts: the scaffolder sets the stacks below; the site self-hosts them (index.html), the dashboard imports @fontsource packages (main.ts) */
+
+:root {
+  --color-primary: #B3B063;
+  --color-secondary: #000000;
+  --color-accent: #1f1f1f;
+  --color-bg: #ffffff;
+  --color-surface: #f7f8f6;
+  --color-text: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-text-inverse: #ffffff;
+  /* Text on the brand color, in both themes. Not text-inverse, which flips with the theme. */
+  --color-on-primary: #111827;
+  --color-border: #e2e4e4;
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 2px 8px rgba(15, 23, 42, 0.05);
+  --color-sidebar-bg: #292814;
+  --color-sidebar-text: #e5e7eb;
+  --color-sidebar-hover: #3e3d1e;
+  --color-sidebar-active: #aaa753;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Montserrat Variable', 'Montserrat', sans-serif;
+  --border-radius: 0;
+
+  /* Trend and notice text: AA as small text on the card surface. */
+  --color-up: #15803d;
+  --color-down: #b91c1c;
+  --color-warn: #92400e;
+  --color-info: #4338ca;
+}
+
+[data-theme="dark"] {
+  --color-primary: #c4c185;
+  --color-secondary: #1a1a1a;
+  --color-accent: #393939;
+  --color-bg: #161d29;
+  --color-surface: #252e39;
+  --color-text: #f3f4f6;
+  --color-text-secondary: #d1d5db;
+  --color-text-inverse: #111827;
+  --color-on-primary: #111827;
+  --color-border: #414a52;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --color-sidebar-bg: #1b1b0d;
+  --color-sidebar-text: #d1d5db;
+  --color-sidebar-hover: #302f17;
+  --color-sidebar-active: #c4c185;
+
+  --color-up: #4ade80;
+  --color-down: #f87171;
+  --color-warn: #fbbf24;
+  --color-info: #a5b4fc;
+}
