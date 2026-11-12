@@ -4,7 +4,7 @@ const config: DashboardConfig = {
   "clientId": "a48bb3f00899e7a59f8d242432fb1867",
   "clientName": "The Gate : A Meeting Venue",
   "clientDomain": "thegategj.com",
-  "clientEmail": "ljkurtz00@msn.com",
+  "clientEmail": "info@thegategj.com",
   "enabledWidgets": [
     "siteAnalytics",
     "contentEditors"
@@ -54,7 +54,6 @@ const config: DashboardConfig = {
   "analytics": {
     "provider": "simple-analytics",
     "simpleAnalyticsId": "thegategj.com",
-    "scriptDomain": "sa.thegategj.com",
     "internalRoutes": [
       "/reports",
       "/analytics",
