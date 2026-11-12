@@ -617,7 +617,7 @@ onMounted(loadList);
 .subs__tab--active:hover { color: var(--color-on-primary); }
 .subs__tab-count {
   min-width: 1.25rem; padding: 0 0.3rem; border-radius: 999px; font-size: 0.6875rem; font-weight: 700; line-height: 1.25rem; text-align: center;
-  background-color: var(--color-secondary); color: #1a1a1a;
+  background-color: var(--color-secondary); color: var(--color-text-inverse);
 }
 
 .subs__filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }

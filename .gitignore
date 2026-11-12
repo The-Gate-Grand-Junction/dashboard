@@ -7,3 +7,6 @@ dist/
 *.tsbuildinfo
 .DS_Store
 .netlify/
+
+# Netlify dev (edge functions) lockfile, generated locally
+deno.lock

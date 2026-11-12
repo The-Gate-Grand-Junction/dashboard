@@ -42,9 +42,9 @@ a {
   /* Always printed in the light colors: dark mode's light text on white paper is unreadable. */
   :root, [data-theme="dark"] {
     color-scheme: light;
-    --color-primary: #B3B063; --color-secondary: #000000; --color-accent: #1f1f1f;
-    --color-bg: #ffffff; --color-surface: #ffffff; --color-text: #1f2937; --color-text-secondary: #4b5563;
-    --color-on-primary: #111827; --color-border: #e2e4e4; --shadow-card: none;
+    --color-primary: #7A5C1A; --color-secondary: #000000; --color-accent: #1F1F1F;
+    --color-bg: #ffffff; --color-surface: #ffffff; --color-text: #1F1F1F; --color-text-secondary: #3D3D3D;
+    --color-on-primary: #ffffff; --color-border: #E5E5E5; --shadow-card: none;
     --color-up: #15803d; --color-down: #b91c1c; --color-warn: #92400e; --color-info: #4338ca;
   }
   body { background: #fff; }

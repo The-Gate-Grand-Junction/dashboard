@@ -60,6 +60,6 @@ const initials = (name: string | null, email: string | null) =>
 .recent__avatar--application { background-color: rgba(214, 166, 22, 0.18); color: var(--color-warn); }
 .recent__main { display: flex; flex-direction: column; min-width: 0; }
 .recent__name { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; font-weight: 600; overflow-wrap: anywhere; }
-.recent__new { padding: 0 0.4rem; border-radius: 999px; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; background-color: var(--color-secondary); color: #1a1a1a; }
+.recent__new { padding: 0 0.4rem; border-radius: 999px; font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; background-color: var(--color-secondary); color: var(--color-text-inverse); }
 .recent__meta { font-size: 0.8125rem; color: var(--color-text-secondary); }
 </style>

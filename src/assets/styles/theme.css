@@ -1,22 +1,25 @@
 /* Fonts: the scaffolder sets the stacks below; the site self-hosts them (index.html), the dashboard imports @fontsource packages (main.ts) */
 
 :root {
-  --color-primary: #B3B063;
+  /* The Gate brand kit (brand-colors.json). Gold #D3B063 fails on white (2.07:1),
+     so light mode uses the deep gold for anything that is text or carries text. */
+  --color-primary: #7A5C1A;
   --color-secondary: #000000;
-  --color-accent: #1f1f1f;
+  --color-accent: #1F1F1F;
   --color-bg: #ffffff;
-  --color-surface: #f7f8f6;
-  --color-text: #1f2937;
-  --color-text-secondary: #4b5563;
+  --color-surface: #F2F2F2;
+  --color-text: #1F1F1F;
+  --color-text-secondary: #3D3D3D;
   --color-text-inverse: #ffffff;
-  /* Text on the brand color, in both themes. Not text-inverse, which flips with the theme. */
-  --color-on-primary: #111827;
-  --color-border: #e2e4e4;
-  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04), 0 2px 8px rgba(15, 23, 42, 0.05);
-  --color-sidebar-bg: #292814;
-  --color-sidebar-text: #e5e7eb;
-  --color-sidebar-hover: #3e3d1e;
-  --color-sidebar-active: #aaa753;
+  /* Text on the brand color. Per theme: white on deep gold (6.23:1), black on gold (10.16:1). */
+  --color-on-primary: #ffffff;
+  --color-border: #E5E5E5;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* Black sidebar in both themes; the active item carries white text, hence the deep gold */
+  --color-sidebar-bg: #000000;
+  --color-sidebar-text: #E5E5E5;
+  --color-sidebar-hover: #1F1F1F;
+  --color-sidebar-active: #7A5C1A;
   --font-heading: 'Bebas Neue', sans-serif;
   --font-body: 'Montserrat Variable', 'Montserrat', sans-serif;
   --border-radius: 0;
@@ -29,21 +32,21 @@
 }
 
 [data-theme="dark"] {
-  --color-primary: #c4c185;
-  --color-secondary: #1a1a1a;
-  --color-accent: #393939;
-  --color-bg: #161d29;
-  --color-surface: #252e39;
-  --color-text: #f3f4f6;
-  --color-text-secondary: #d1d5db;
-  --color-text-inverse: #111827;
-  --color-on-primary: #111827;
-  --color-border: #414a52;
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --color-sidebar-bg: #1b1b0d;
-  --color-sidebar-text: #d1d5db;
-  --color-sidebar-hover: #302f17;
-  --color-sidebar-active: #c4c185;
+  --color-primary: #D3B063;
+  --color-secondary: #E5E5E5;
+  --color-accent: #1F1F1F;
+  --color-bg: #000000;
+  --color-surface: #1F1F1F;
+  --color-text: #ffffff;
+  --color-text-secondary: #E5E5E5;
+  --color-text-inverse: #000000;
+  --color-on-primary: #000000;
+  --color-border: #333333;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --color-sidebar-bg: #000000;
+  --color-sidebar-text: #E5E5E5;
+  --color-sidebar-hover: #1F1F1F;
+  --color-sidebar-active: #7A5C1A;
 
   --color-up: #4ade80;
   --color-down: #f87171;
